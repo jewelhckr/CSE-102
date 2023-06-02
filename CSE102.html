@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examination</title>
+</head>
+<body>
+    Section A
+    2. Explain what strings are. List and explain 5 string methods.
+    A string is a function in  JavaS script that represents a value. It is represented in
+    by double or single quotes and cannot be operated unlike numbers.
+
+    Types
+    1. 
+
+    <script>
+        // Section B 
+            // Number 1 (PDC-NID)
+        for(var i = 1; i <= 100; i++){
+            if(i%3 == 0 && i%5 !== 0){
+                console.log(`${i}-NID`)
+            } 
+            else if(i%5 == 0 && i%3 !== 0){
+                console.log(`${i}-PDC`)
+            } 
+            else if(i%3 == 0 && i%5 == 0){
+                console.log(`${i}-NID-PDC`)
+            }
+            else {
+                console.log("Neither PDC nor NID")
+            }
+        }
+
+            // Number 2 (Factorial)
+        for(let i = 1; i <= 10; i++){
+            console.log(i*(i-1)*(i-2));
+        }
+
+            //Number 6 (Grading)
+            function grade () {
+                // var score = prompt("Input Number");
+                var score = scoreInput.value;
+                if (score <= 59){
+                    disp.innerText = "F";
+                } else if (score <= 62) {
+                    disp.innerText = "D-";
+                }  else if (score <= 66) {
+                    disp.innerText = "D";
+                } else if (score <= 69) {
+                    disp.innerText = "D+";
+                } else if (score <= 72) {
+                    disp.innerText = "C-";
+                } else if (score <= 76) {
+                    disp.innerText = "C";
+                } else if (score <= 79) {
+                    disp.innerText = "C+";
+                } else if (score <= 82) {
+                    disp.innerText = "B-";
+                } else if (score <= 86) {
+                    disp.innerText = "B";
+                } else if (score <= 89) {
+                    disp.innerText = "B+";
+                } else if (score <= 92) {
+                    disp.innerText = "A-";
+                } else if (score <= 96) {
+                    disp.innerText = "A";
+                } else if (score <= 100) {
+                    disp.innerText = "A+";
+                } else  {
+                        disp.innerText = "Invalid Input !!!";
+                    }
+                    
+            }   
+    </script>
+</body>
+</html>
